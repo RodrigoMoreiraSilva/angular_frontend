@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeComponent implements OnInit {
 
+  propId = 'Antes'
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  bindDeEvento(): void {
+    console.log('Fazendo algo!')
+
+    this.propId = 'Depois'
+  }
 }
