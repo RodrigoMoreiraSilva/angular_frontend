@@ -1,4 +1,15 @@
-<p>
-    Este projeto tem o intuito de praticar de forma simples e objetiva os conceitos 
-    mais importantes do Ângular, atualmente na versão 12.2.
+<p class="bold">
+    Exemplo de diretiva estrutural
 </p>
+<span>
+    <ul>
+        <li *MyFor="let n em [1, 2, 3]">{{ n }}</li>
+    </ul>
+</span>
+<br>
+<p class="bold">
+    Exemplo de diretiva de atributo
+</p>
+<span appRed>
+    Este texo teve sua cor atribuída por uma diretiva.
+</span>
