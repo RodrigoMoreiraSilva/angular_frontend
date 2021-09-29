@@ -17,6 +17,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { TimeComponent } from './views/time/time.component';
 import { RedDirective } from './directives/red.directive';
+import { ForDirective } from './directives/for.directive';
 
 
 
@@ -29,7 +30,8 @@ import { RedDirective } from './directives/red.directive';
     HomeComponent,
     ProductCrudComponent,
     TimeComponent,
-    RedDirective
+    RedDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
