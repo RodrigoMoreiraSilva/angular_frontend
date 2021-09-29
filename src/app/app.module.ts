@@ -16,6 +16,7 @@ import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { TimeComponent } from './views/time/time.component';
+import { RedDirective } from './directives/red.directive';
 
 
 
@@ -27,7 +28,8 @@ import { TimeComponent } from './views/time/time.component';
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    TimeComponent
+    TimeComponent,
+    RedDirective
   ],
   imports: [
     BrowserModule,
