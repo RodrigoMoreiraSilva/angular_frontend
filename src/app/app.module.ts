@@ -18,7 +18,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { TimeComponent } from './views/time/time.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductCreateComponent } from './components/products/product-create/product-create.component';
 
 
 
