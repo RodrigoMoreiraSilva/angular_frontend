@@ -17,6 +17,11 @@ export class TimeComponent implements OnInit {
   bindDeEvento(): void {
     console.log('Fazendo algo!')
 
-    this.propId = 'Depois'
+    /* if(this.propId == 'Antes')
+      this.propId = 'Depois'
+    else
+      this.propId = 'Antes' */
+
+    this.propId == 'Antes' ? this.propId = 'Depois' : this.propId = 'Antes'
   }
 }

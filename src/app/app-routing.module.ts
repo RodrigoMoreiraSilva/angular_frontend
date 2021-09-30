@@ -15,7 +15,7 @@ const routes: Routes = [{
   component: ProductCrudComponent
 },
 {
-  path:"time",
+  path:"exemplos",
   component: TimeComponent
 },
 {
