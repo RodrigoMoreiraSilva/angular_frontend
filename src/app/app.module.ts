@@ -21,6 +21,7 @@ import { TimeComponent } from './views/time/time.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -45,7 +46,8 @@ import { ProductCreateComponent } from './components/products/product-create/pro
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

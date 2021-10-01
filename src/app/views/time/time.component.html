@@ -27,3 +27,21 @@
         <span class="bold" appRed>{{propId}}</span> de clicar no botão para fazer algo!
     </p>
 </span>
+<br>
+<p class="bold">
+    Exemplo de um método sendo chamado de um serviço (console)
+</p>
+<span>
+    <button (click)='chamaServico()'>
+        Chama Service
+    </button>
+</span>
+<br><br>
+<p class="bold">
+    Exemplo 2 de um serviço que exibe uma mensagem de snackbar no canto superior esquerdo.
+</p>
+<span>
+    <button mat-raised-button (click) = "mostrarMsg()">
+        Mostre a mensagem
+    </button>
+</span>
