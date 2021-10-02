@@ -5,6 +5,7 @@ import {HomeComponent} from "./views/home/home.component";
 import {ProductCrudComponent} from "./views/product-crud/product-crud.component";
 import {TimeComponent} from "./views/time/time.component";
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { ProductRead2Component } from './components/products/product-read2/product-read2.component';
 
 const routes: Routes = [{
   path:"",
@@ -21,6 +22,10 @@ const routes: Routes = [{
 {
   path:"products/create",
   component: ProductCreateComponent
+},
+{
+  path:"products/read",
+  component: ProductRead2Component
 }
 ];
 
