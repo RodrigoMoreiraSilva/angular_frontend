@@ -15,7 +15,10 @@ export class ProductService {
   constructor(private snackBar: MatSnackBar,private http: HttpClient) { }
 
   configUrl = "./assets/config.json";
-  config: Config | undefined
+  /* config: Config={
+    apiUrl: '',
+    createEndpoint: ''
+  } */
   
   showMessage(msg: string): void{
     this.snackBar.open(msg,'x',{
@@ -29,18 +32,24 @@ export class ProductService {
     return this.http.get<Config>(this.configUrl)
   } 
 
-  getUrlCreate() {
-      this.getConfigFile().subscribe((data) => this.config = {
-      apiUrl: (data as any).apiUrl,
-      createEndpoint: (data as any).createEndpoint
+  /* getUrlCreate() {
+      this.getConfigFile().subscribe((data: Config) => {
+      this.config = data
+      console.log(this.config)
     })
-  }
+    console.log(this.config)
+  } */
 
-  /* create(product: Product)Observable<Product>{
-       
-    this.getConfigFile().subscribe(data => console.log(data)) 
-        
-    return this.getConfigFile().subscribe((data: Config) => this.http.post<Product>(data.apiUrl+data.createEndpoint, product))
+  /* create(product: Product):Observable<Product>{
+    let config: Config={
+      apiUrl: '',
+      createEndpoint: ''
+    }  
+    this.getConfigFile().subscribe(data =>{config = data
+      console.log(config)
+    })
+    console.log(config)
+    return this.http.post<Product>(`${config.apiUrl}${config.createEndpoint}`, product)
     
   }  */
 
@@ -63,6 +72,11 @@ export class ProductService {
   update(product:Product): Observable<Product>{
     const url = `${this.baseUrl}/${product.id}`
     return this.http.put<Product>(url,product)
+  }
+
+  delete(id: string): Observable<Product>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Product>(url)
   }
 
 }
